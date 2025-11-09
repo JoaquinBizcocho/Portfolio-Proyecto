@@ -6,6 +6,7 @@
 
 body {
   background: lightgrey; 
+  height: 900px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  padding: 20px;
+  padding: 10px;
 } 
 
 .logo {
@@ -98,3 +99,12 @@ footer {
   left: 0;
 }
 
+
+/* Evita que el traductor cambie el diseño de la página */
+.goog-logo-link, .goog-te-gadget span {
+  display: none ;
+}
+
+.goog-te-gadget {
+  font-size: 0 ;
+}
