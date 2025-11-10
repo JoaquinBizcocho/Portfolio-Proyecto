@@ -1,0 +1,179 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body {
+  background: lightgrey; 
+  height: 900px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.BarraPrincipal {
+  background: #1c3f73; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+} 
+
+.logo {
+  font-size: 24px; 
+}
+
+.BarraPrincipal ul {
+  list-style: none; 
+  display: flex; 
+}
+
+.BarraPrincipal button {
+  background: transparent; 
+  border: 2px solid transparent;
+  color: white; 
+  padding:  13px; 
+  border-radius: 5px; 
+}
+
+.BarraPrincipal button:hover {
+  background: white; 
+  color: #1c3f73; 
+}
+
+
+#contenido {
+  padding: 30px; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.seccion {
+  display: none; /* Oculta las secciones por defecto */
+  max-width: 55%; 
+  background: white; 
+  padding: 40px; 
+  border-radius: 10px; 
+}
+
+.seccion.visible {
+  display: block; /* Muestra la sección visible */
+}
+
+
+h2 {
+  color: #1c3f73; 
+  text-decoration: underline #1c3f73;
+  margin-bottom: 15px; 
+}
+
+h3 {
+  color: #1c3f73; 
+  margin-top: 10px; 
+}
+
+ul {
+  margin-left: 25px; 
+}
+
+.imagenPerfil {
+  width: 150px; 
+  height: 150px; 
+  border: 3px solid #1c3f73; 
+  border-radius: 50%; 
+}
+
+
+
+footer {
+  text-align: center; 
+  background: #1c3f73; 
+  color: white; 
+  padding: 15px; 
+  margin-top: 30px; 
+  font-size: 17px; 
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.contenedor-experiencias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* se apilan si no caben */
+}
+
+
+.caja-experiencia {
+  background: #f5f6fa;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%; 
+}
+
+
+.caja-experiencia h3 {
+  color: #1c3f73;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1c3f73;
+  display: inline-block;
+}
+
+
+.Trabajo {
+  margin-bottom: 15px;
+}
+
+.Trabajo h4 {
+  color: #2a5ba0;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* Contenedor del traductor (inicialmente oculto pero sin romper el iframe) */
+.traductor-contenedor {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: transparent;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+/* Ocultar texto “Powered by Google Translate” */
+.goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+
+/* Alinear el selector del idioma */
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+
+/* RESPONSIVE */ 
+@media (max-width: 768px) { 
+  .navbar { 
+    flex-direction: column; 
+    gap: 10px; 
+  } 
+  
+  .intro { 
+    flex-direction: column; 
+  } 
+  
+  .seccion { 
+    padding: 25px; 
+  }
+}
