@@ -94,6 +94,7 @@ ul {
   height: 150px; 
   border: 3px solid #1c3f73; 
   border-radius: 50%; 
+  display: block;
   margin: 0 auto 20px auto;
 }
 
