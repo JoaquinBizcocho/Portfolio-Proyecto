@@ -1,0 +1,267 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: lightgrey; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BarraPrincipal {
+  background: #1c3f73; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px;
+  flex-wrap: wrap;
+} 
+
+.logo {
+  font-size: 24px; 
+}
+
+.BarraPrincipal ul {
+  list-style: none; 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.BarraPrincipal button {
+  background: transparent; 
+  border: 2px solid transparent;
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.BarraPrincipal button:hover {
+  background: white; 
+  color: #1c3f73; 
+}
+
+
+#contenido {
+  flex: 1; /* ocupa todo el espacio disponible */
+  padding: 30px; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion {
+  display: none; /* Oculta las secciones por defecto */
+  max-width: 55%; 
+  background: white; 
+  padding: 40px; 
+  border-radius: 10px; 
+ 
+}
+
+.seccion.visible {
+  display: block; /* Muestra la sección visible */
+}
+
+h2 {
+  color: #1c3f73; 
+  text-decoration: underline #1c3f73;
+  margin-bottom: 15px; 
+
+}
+
+h3 {
+  color: #1c3f73; 
+  margin-top: 10px; 
+}
+
+ul {
+  margin-left: 25px; 
+}
+
+.imagenPerfil {
+  width: 150px; 
+  height: 150px; 
+  border: 3px solid #1c3f73; 
+  border-radius: 50%; 
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.contenedor-experiencias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; 
+  width: 100%;
+}
+
+.caja-experiencia {
+  background: #f5f6fa;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%; 
+  min-width: 250px;
+}
+
+.caja-experiencia h3 {
+  color: #1c3f73;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1c3f73;
+  display: inline-block;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #1c3f73;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  background: #ffffff;
+  color: #1c3f73;
+}
+
+.proyectos-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.proyecto-card {
+  background: #f5f6fa;
+  padding: 20px;
+  width: 45%; 
+  min-width: 280px;
+  border-radius: 8px;
+
+
+}
+
+
+
+.Trabajo {
+  margin-bottom: 15px;
+}
+
+.Trabajo h4 {
+  color: #2a5ba0;
+  margin-bottom: 5px;
+}
+
+
+footer {
+  text-align: center; 
+  background: #1c3f73; 
+  color: white; 
+  padding: 15px; 
+  font-size: 17px; 
+  width: 100%;
+  margin-top: auto; 
+}
+
+
+
+.traductor-contenedor { 
+  display: none; 
+  position: absolute; 
+  top: 40px; 
+  right: 0; 
+  background: transparent; 
+  padding: 5px; 
+  border-radius: 6px; 
+} 
+
+.goog-logo-link, .goog-te-gadget span { 
+  display: none ; 
+} 
+
+  .goog-te-gadget { 
+    color: transparent ; 
+  }
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .BarraPrincipal {
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .BarraPrincipal ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center; 
+    padding: 0;
+  }
+
+  .BarraPrincipal button {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  #contenido {
+    padding: 20px;
+  }
+
+  .seccion {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .contenedor-experiencias {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .caja-experiencia {
+    width: 90%;
+  }
+
+  .imagenPerfil {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .imagenPerfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  .BarraPrincipal {
+    padding: 10px;
+  }
+
+  .BarraPrincipal button {
+    padding: 8px;
+  }
+}

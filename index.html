@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Joaquín Bizcocho Cano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="BarraPrincipal">
+    <h1 class="logo">Joaquín Bizcocho Cano</h1>
+    <nav>
+      <ul>
+        <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+        <li><button onclick="mostrarSeccion('experiencia')">Experiencia</button></li>
+        <li><button onclick="mostrarSeccion('formacion')">Formación</button></li>
+        <li><button onclick="mostrarSeccion('Proyectos')">Proyectos</button></li>
+        <li><button onclick="mostrarSeccion('habilidades')">Habilidades</button></li>
+        <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+        <li style="position: relative;">
+          <button id="btnIdioma" onclick="toggleTraductor()">Cambiar Idioma</button>
+          <div id="google_translate_element" class="traductor-contenedor"></div>
+        </li>
+      </ul>
+    </nav>
+
+
+  </header>
+
+    
+
+
+  <div id="contenido">
+
+    <section id="inicio" class="seccion visible">
+      <div class="introduccion">
+        <img src="imagenes/foto_curriculum.png"  class="imagenPerfil">
+        <div>
+          <h2 style="text-align: center;">Sobre mí</h2>
+          <p>Soy Joaquín Bizcocho Cano, tengo 20 años y me considero una persona responsable, proactiva, empática y paciente. 
+            Me adapto con facilidad a los cambios y aprendo rápidamente, disfrutando del proceso de adquirir nuevos conocimientos y habilidades. <br/> <br/>
+            Mi objetivo es seguir creciendo profesionalmente, aportando compromiso, dedicación y valor en cada proyecto en el que participo, 
+            desarrollando mi potencial y contribuyendo de manera positiva al equipo y los objetivos del mismo.</p><br/>
+          <p><br/><strong>Carnet de conducir.</strong></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experiencia" class="seccion">
+  <h2 style="text-align: center;">Experiencia</h2>
+
+  <div class="contenedor-experiencias">
+    
+ 
+    <div class="caja-experiencia">
+      <h3>Sector Informático</h3>
+
+      <div class="Trabajo">
+        <h4>Técnico de mantenimiento de redes informáticas</h4>
+        <p class="Informacion">FOURNIF OLAB — Pescara, Italia (16/03/2024 - 24/03/2024)</p>
+        <ul>
+          <li>Instalación software.</li>
+          <li>Programación básica.</li>
+          <li>Detección de disfunciones en sistemas microinformáticos.</li>
+        </ul>
+      </div>
+
+      <div class="Trabajo">
+        <h4>Desarrollador Web (Formación en prácticas)</h4>
+        <p class="Informacion">AYESA — Sevilla (15/03/2025 - 30/05/2025)</p>
+        <ul>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Angular</li>
+          <li>Spring</li>
+        </ul>
+      </div>
+    </div>
+
+   
+    <div class="caja-experiencia">
+      <h3>Otro Sector</h3>
+
+      <div class="Trabajo">
+        <h4>Repartidor</h4>
+        <p class="Informacion">Telepizza — Sevilla, Avenida República Argentina (16/10/2025 - Presente)</p>
+        <ul>
+          <li>Entrega de pedidos a domicilio de manera eficiente y puntual.</li>
+          <li>Gestión de rutas y pedidos optimizando tiempos de entrega.</li>
+          <li>Atención amable y personalizada a los clientes.</li>
+        </ul>
+      </div>
+
+        </div>
+</section>
+
+
+
+    <section id="formacion" class="seccion">
+      <h2>Formación Académica</h2>
+      <p><strong>ESO</strong> - I.E.S Mateo Alemán, San Juan de Aznalfarache (Sevilla).</p><br/>
+      <p><strong>Ciclo Formativo de Grado Medio.</strong><br/> Sistemas microinformáticos y redes. (2022-2024)</p><br/>
+      <p><strong>Ciclo Formativo de Grado Superior.</strong><br/> Desarrollo de Aplicaciones Web. (2024-Presente)</p><br/>
+
+      <h3>Cursos</h3>
+      <ul>
+        <li>Curso de prevención de riesgos laborales.</li>
+        <li>Curso de JavaScript.</li>
+      </ul>
+    </section>
+
+     <section id="Proyectos" class="seccion">
+
+
+      <h2>Proyectos</h2>
+
+      <div class="proyectos-container">
+
+        <div class="proyecto-card">
+          <p><strong>GoPass:</strong><br/> 
+          GoPass es una aplicación que estoy desarrollando en Android Studio con Firebase para un proyecto escolar,
+          basada en un lector de QR y un QR único de cada alumno que optimiza la salida entre horas.</p>
+          <a class="btn-link" href="https://github.com/JoaquinBizcocho/Aplicacion-GoPass" target="_blank">GoPass</a>
+        </div>
+
+        <div class="proyecto-card">
+          <p><strong>Servlet de Empresa:</strong><br/> 
+          Proyecto hecho en Eclipse usando Servlets y JSP, conectado a una base de datos
+          donde puedes mostrar usuarios, editarlos por DNI y ver su salario.</p>
+          <a class="btn-link" href="https://github.com/JoaquinBizcocho/Empresa-Servlet" target="_blank">Empresa-Servlet</a>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <section id="habilidades" class="seccion">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Interés y facilidad para aprender.</li>
+        <li>Responsabilidad y compromiso.</li>
+        <li>Trabajo en equipo.</li>
+      </ul>
+
+      <h2>Habilidades Informáticas</h2>
+      <ul>
+        <li>Word, Excel, PowerPoint.</li>
+        <li>Montaje y mantenimiento de equipos informáticos.</li>
+        <li>Uso de la terminal en Windows y Linux.</li>
+        <li>Conocimientos en lenguajes de programacion, especialmente en Java y JavaScript</li>
+        <li>Experiencia básica con Servlets y JSP para desarrollo de aplicaciones web en Java.</li>
+        <li>Nociones de React para la creación de interfaces interactivas.</li>
+        <li>Conocimientos de HTML y CSS para el diseño y desarrollo front-end.</li>
+
+      </ul>
+    </section>
+
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:  </strong> 675012952</p>
+      <p><strong>Email:  </strong>joaquinbizcocho6@gmail.com</a></p>
+      <p><strong>Ubicacion:</strong> Sevilla</p>
+    </section>
+
+  </div>
+
+  <footer>
+    Joaquin Bizcocho Cano
+  </footer>
+
+  <script>
+    // Oculta todas las secciones y muestra solo la elegida
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => {
+        sec.classList.remove('visible');
+      });
+      document.getElementById(id).classList.add('visible');
+    }
+  </script>
+
+
+  <script>
+    function toggleTraductor() {
+    const frame = document.querySelector('#google_translate_element');
+    frame.style.display = frame.style.display === 'none' ? 'block' : 'none';
+  }
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'es',
+      includedLanguages: 'en,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+  </script>
+
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  
+</script>
+
+
+</body>
+</html>
